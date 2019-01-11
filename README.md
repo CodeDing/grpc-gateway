@@ -26,6 +26,7 @@
 
 # 目录结构
 
+```
 +-- ├── gateway
 │   +-- └── main.go
 +-- ├── greeter_client
@@ -44,6 +45,7 @@
 │   +-- ├── helloworld.proto
 │   +-- └── Makefile
 +-- └── README.md
+```
 
 
 # proto目录
