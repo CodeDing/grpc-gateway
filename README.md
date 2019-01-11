@@ -59,7 +59,7 @@
    helloworld.proto,注意googleapi写法
 
 ## 生成grpc和grpc-gateway的go文件
-   make 
+   cd proto && make 
    
 
 # 测试
