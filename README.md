@@ -26,24 +26,24 @@
 
 # 目录结构
 
-├── gateway
-│   └── main.go
-├── greeter_client
-│   └── main.go
-├── greeter_server
-│   └── main.go
-├── proto
-│   ├── google
-│   │   └── api
-│   │       ├── annotations.pb.go
-│   │       ├── annotations.proto
-│   │       ├── http.pb.go
-│   │       └── http.proto
-│   ├── helloworld.pb.go
-│   ├── helloworld.pb.gw.go
-│   ├── helloworld.proto
-│   └── Makefile
-└── README.md
++--├── gateway
+│   +--└── main.go
++--├── greeter_client
+│   +--└── main.go
++--├── greeter_server
+│   +--└── main.go
++--├── proto
+│   +--├── google
+│   │   +--└── api
+│   │       +--├── annotations.pb.go
+│   │       +--├── annotations.proto
+│   │       +--├── http.pb.go
+│   │       +--└── http.proto
+│   +--├── helloworld.pb.go
+│   +--├── helloworld.pb.gw.go
+│   +--├── helloworld.proto
+│   +--└── Makefile
++--└── README.md
 
 
 # proto目录
