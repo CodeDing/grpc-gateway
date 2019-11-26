@@ -1,6 +1,6 @@
 # 环境
 ## go版本
-   - >1.5
+   - 1.5以上
 
 # 安装
 
@@ -24,16 +24,44 @@
    go get google.golang.org/grpc
 ```
 
+# 目录结构
+
+```
+.
+├── gateway
+│   └── main.go
+├── greeter_client
+│   └── main.go
+├── greeter_server
+│   └── main.go
+├── proto
+│   ├── google
+│   │   └── api
+│   │       ├── annotations.pb.go
+│   │       ├── annotations.proto
+│   │       ├── http.pb.go
+│   │       └── http.proto
+│   ├── helloworld.pb.go
+│   ├── helloworld.pb.gw.go
+│   ├── helloworld.proto
+│   └── Makefile
+└── README.md
+
+```
+
+
 # proto目录
 
 ## google api
   - 问题protoc-gen-grpc-gateway中第三方的google api报错
 
 ## 自定义
-   helloworld.proto
+   helloworld.proto,注意googleapi写法
 
 ## 生成grpc和grpc-gateway的go文件
-   make 
+```
+   cd proto && make 
+```
    
 
 # 测试
@@ -54,5 +82,5 @@
 ```
 
 # 仅供参考
-   - [项目](https://www.cnblogs.com/andyidea/p/6529900.html)
+   - [项目来源](https://www.cnblogs.com/andyidea/p/6529900.html)
    - [带https](https://github.com/EDDYCJY/grpc-hello-world)

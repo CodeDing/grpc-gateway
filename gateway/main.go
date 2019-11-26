@@ -2,6 +2,7 @@ package main
 
 import (
 	"flag"
+	"fmt"
 	"net/http"
 
 	"github.com/golang/glog"
@@ -9,7 +10,7 @@ import (
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 
-	gw "grpc-helloworld-gateway/proto"
+	gw "github.com/CodeDing/grpc-gateway/proto"
 )
 
 var (
@@ -32,6 +33,11 @@ func run() error {
 }
 
 func main() {
+	fmt.Println(`
+==================================
+            Gateway
+==================================
+`)
 	flag.Parse()
 	defer glog.Flush()
 

@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
 
-	pb "grpc-helloworld-gateway/proto"
+	pb "github.com/CodeDing/grpc-gateway/proto"
 
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
@@ -26,6 +26,11 @@ func (s *server) SayHello(ctx context.Context, in *pb.HelloRequest) (*pb.HelloRe
 }
 
 func main() {
+	fmt.Println(`
+==================================
+          Start Server
+==================================	
+`)
 	lis, err := net.Listen("tcp", port)
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
