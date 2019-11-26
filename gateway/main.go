@@ -35,7 +35,7 @@ func run() error {
 func main() {
 	fmt.Println(`
 ==================================
-            Gateway
+	        Gateway
 ==================================
 `)
 	flag.Parse()
