@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	pb "grpc-helloworld/helloworld"
+	pb "github.com/CodeDing/grpc-gateway/proto"
 
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
